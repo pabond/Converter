@@ -20,7 +20,7 @@ class CryptoCurrencyCell: UITableViewCell {
     
     func fillWith(_ cryptoCurrency: CryptoCurrency) {
         CryptoCurrencyNameLabel.text = cryptoCurrency.name
-        CryptoCurrencyValuesLabel.text = "\(cryptoCurrency.priceBTC) BTC per \(cryptoCurrency.priceUSD) USD"
+        CryptoCurrencyValuesLabel.text = cryptoCurrency.currency
     }
     
     override func prepareForReuse() {

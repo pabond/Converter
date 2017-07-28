@@ -54,6 +54,7 @@
 		2DB082901F2B550700070A0B /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0828E1F2B550700070A0B /* ConverterViewController.swift */; };
 		2DB082911F2B550700070A0B /* ConverterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB0828F1F2B550700070A0B /* ConverterViewController.xib */; };
 		2DB082931F2B552100070A0B /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082921F2B552100070A0B /* ConverterView.swift */; };
+		2DB082951F2B768600070A0B /* ContverterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082941F2B768600070A0B /* ContverterInteractor.swift */; };
 		C59D5CCB5EB332AB86016DF2 /* Pods_ConverterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A15E3566158576C15CF143 /* Pods_ConverterApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		2DB0828E1F2B550700070A0B /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		2DB0828F1F2B550700070A0B /* ConverterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConverterViewController.xib; sourceTree = "<group>"; };
 		2DB082921F2B552100070A0B /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		2DB082941F2B768600070A0B /* ContverterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContverterInteractor.swift; sourceTree = "<group>"; };
 		C0A15E3566158576C15CF143 /* Pods_ConverterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConverterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E319128D698202BEC983AB /* Pods-ConverterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterApp/Pods-ConverterApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				2DB0824D1F2A754A00070A0B /* Context.swift */,
+				2DB082941F2B768600070A0B /* ContverterInteractor.swift */,
 			);
 			path = Contexts;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				2DB0827D1F2A754A00070A0B /* CryptoCurrencyCell.swift in Sources */,
 				2DB082671F2A754A00070A0B /* UITableView.swift in Sources */,
 				2DB0828C1F2B539400070A0B /* CryptoCurrenciesViewController.swift in Sources */,
+				2DB082951F2B768600070A0B /* ContverterInteractor.swift in Sources */,
 				2DB082781F2A754A00070A0B /* RoundedView.swift in Sources */,
 				2DB082591F2A754A00070A0B /* Lock.swift in Sources */,
 				2DB0826F1F2A754A00070A0B /* Weakable.swift in Sources */,

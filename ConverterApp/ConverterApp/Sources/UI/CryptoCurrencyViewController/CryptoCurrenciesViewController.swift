@@ -20,7 +20,7 @@ class CryptoCurrenciesViewController: UIViewController, RootViewGettable {
         super.viewDidLoad()
         
         self.load()
-        self.navigationItem.title = "Crypto currencies";
+        self.navigationItem.title = "Crypto currencies"
     }
     
     private func load() {

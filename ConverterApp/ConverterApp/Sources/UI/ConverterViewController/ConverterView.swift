@@ -9,5 +9,13 @@
 import UIKit
 
 class ConverterView: UIView {
-
+    @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var convertTextField: UITextField!
+    @IBOutlet weak var currencySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    func fillViews(with cryptoCurrency: CryptoCurrency) {
+        currencyLabel.text = cryptoCurrency.currency
+        
+    }
 }

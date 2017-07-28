@@ -17,6 +17,10 @@ struct CryptoCurrency: Mappable {
     var rank = 0
     var symbol = String()
     
+    var currency : String {
+        return "\(self.priceBTC) BTC per \(self.priceUSD) USD"
+    }
+    
     init?(map: Map) {
         
     }
