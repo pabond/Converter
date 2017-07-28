@@ -11,4 +11,13 @@ import UIKit
 class CryptoCurrenciesView: BPVView {
     @IBOutlet weak var tableView: UITableView!
     
+    private let rowHeight : CGFloat = 50
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.tableView.registerCell(withClass: CryptoCurrencyCell.self)
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = rowHeight
+    }
 }

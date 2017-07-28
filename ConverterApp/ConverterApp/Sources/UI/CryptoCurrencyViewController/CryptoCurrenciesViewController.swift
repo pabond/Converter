@@ -15,14 +15,12 @@ class CryptoCurrenciesViewController: UIViewController, RootViewGettable {
     let disposeBag = DisposeBag()
     
     var cryptoCurrencies : [CryptoCurrency]?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.load()
-        self.rootView?.tableView.registerCell(withClass: CryptoCurrencyCell.self)
-        self.rootView?.tableView.rowHeight = UITableViewAutomaticDimension
-        self.rootView?.tableView.estimatedRowHeight = 50
+        self.navigationItem.title = "Crypto currencies";
     }
     
     private func load() {
@@ -48,8 +46,8 @@ class CryptoCurrenciesViewController: UIViewController, RootViewGettable {
     }
 }
 
-    // MARK: -
-    // MARK: UITableViewDelegate, UITableViewDataSource
+// MARK: -
+// MARK: UITableViewDelegate, UITableViewDataSource
 
 extension CryptoCurrenciesViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

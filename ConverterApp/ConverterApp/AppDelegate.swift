@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
+        let window = UIWindow.window()
+        
+        let controller = CryptoCurrenciesViewController.viewController()
+        let navigationConroller = UINavigationController(rootViewController: controller)
+        
+        window.rootViewController = navigationConroller
+        self.window = window
+        
+        window.makeKeyAndVisible()
+
         
         return true
     }
