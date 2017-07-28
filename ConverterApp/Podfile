@@ -1,0 +1,11 @@
+# Podfile
+use_frameworks!
+
+target 'ConverterApp' do
+	pod 'IDPCastable'
+	pod 'Alamofire'
+	pod 'ObjectMapper', '~> 2.2'
+	pod 'AlamofireObjectMapper', '~> 4.0'
+	pod 'RxSwift',    '~> 3.0'
+end
+

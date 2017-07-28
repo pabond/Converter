@@ -1,26 +1,85 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uhR-JC-tbp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Crypto Currecies-->
+        <scene sceneID="vgr-ei-2Mb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fZi-5X-EWW" customClass="CryptoCurrenciesViewController" customModule="ConverterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="zUp-69-IJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="VK1-nB-yp6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="qcD-iZ-q4g" customClass="CryptoCurrenciesView" customModule="ConverterApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W9Y-je-WzA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fZi-5X-EWW" id="xLU-sc-xL0"/>
+                                    <outlet property="delegate" destination="fZi-5X-EWW" id="K7H-NC-NxC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W9Y-je-WzA" secondAttribute="trailing" id="1JP-RF-u0A"/>
+                            <constraint firstItem="W9Y-je-WzA" firstAttribute="leading" secondItem="qcD-iZ-q4g" secondAttribute="leading" id="9Oi-In-NQd"/>
+                            <constraint firstItem="W9Y-je-WzA" firstAttribute="top" secondItem="zUp-69-IJf" secondAttribute="bottom" id="B7l-TX-tku"/>
+                            <constraint firstItem="VK1-nB-yp6" firstAttribute="top" secondItem="W9Y-je-WzA" secondAttribute="bottom" id="mHD-rY-qw7"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="W9Y-je-WzA" id="Y7X-F8-lXE"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crypto Currecies" id="Lch-kp-LyZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bse-7P-0KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527.20000000000005" y="-118.29085457271366"/>
+        </scene>
+        <!--Converter View Controller-->
+        <scene sceneID="PPY-hL-Xp1">
+            <objects>
+                <viewController id="l9I-1e-Nr8" customClass="ConverterViewController" customModule="ConverterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QoA-AM-dPC"/>
+                        <viewControllerLayoutGuide type="bottom" id="0vB-6N-F5c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UcU-sf-ank">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2C-rg-JBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="247" y="-118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hzD-Gk-9EF">
+            <objects>
+                <navigationController id="uhR-JC-tbp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7VH-q3-PTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fZi-5X-EWW" kind="relationship" relationship="rootViewController" id="3Sb-JV-RnA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24b-hQ-lgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1255" y="-118"/>
         </scene>
     </scenes>
 </document>

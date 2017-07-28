@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="CryptoCurrencyCell" customModule="ConverterApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptoCurrencyName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBa-NL-wQl">
+                        <rect key="frame" x="16" y="8" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptoCurrency values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axG-yT-Nhm">
+                        <rect key="frame" x="16" y="36.5" width="288" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1C6-RD-sFl">
+                        <rect key="frame" x="0.0" y="60.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="R3Z-Dp-EGG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lBa-NL-wQl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="0UL-n1-m2v"/>
+                    <constraint firstItem="1C6-RD-sFl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="71O-9h-ZYv"/>
+                    <constraint firstAttribute="trailing" secondItem="1C6-RD-sFl" secondAttribute="trailing" id="FqP-VH-xMO"/>
+                    <constraint firstItem="lBa-NL-wQl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Gsm-iq-q94"/>
+                    <constraint firstItem="axG-yT-Nhm" firstAttribute="trailing" secondItem="lBa-NL-wQl" secondAttribute="trailing" id="R42-pG-2VT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lBa-NL-wQl" secondAttribute="trailing" constant="8" id="bqp-LP-udk"/>
+                    <constraint firstItem="axG-yT-Nhm" firstAttribute="top" secondItem="lBa-NL-wQl" secondAttribute="bottom" constant="8" id="jfs-cJ-MAs"/>
+                    <constraint firstAttribute="bottom" secondItem="1C6-RD-sFl" secondAttribute="bottom" id="mpg-xX-oYV"/>
+                    <constraint firstItem="axG-yT-Nhm" firstAttribute="leading" secondItem="lBa-NL-wQl" secondAttribute="leading" id="ree-7F-u01"/>
+                    <constraint firstItem="1C6-RD-sFl" firstAttribute="top" secondItem="axG-yT-Nhm" secondAttribute="bottom" constant="8" id="yv9-ti-SFX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CryptoCurrencyNameLabel" destination="lBa-NL-wQl" id="cUj-ST-laT"/>
+                <outlet property="CryptoCurrencyValuesLabel" destination="axG-yT-Nhm" id="xr7-Eb-GQ5"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>

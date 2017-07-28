@@ -8,20 +8,111 @@
 
 /* Begin PBXBuildFile section */
 		2D3A614D1F2A170300759D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A614C1F2A170300759D17 /* AppDelegate.swift */; };
-		2D3A614F1F2A170300759D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A614E1F2A170300759D17 /* ViewController.swift */; };
 		2D3A61521F2A170300759D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A61501F2A170300759D17 /* Main.storyboard */; };
 		2D3A61541F2A170300759D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A61531F2A170300759D17 /* Assets.xcassets */; };
 		2D3A61571F2A170300759D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A61551F2A170300759D17 /* LaunchScreen.storyboard */; };
+		2DB082581F2A754A00070A0B /* BPVMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082191F2A754A00070A0B /* BPVMacro.m */; };
+		2DB082591F2A754A00070A0B /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0821A1F2A754A00070A0B /* Lock.swift */; };
+		2DB0825A1F2A754A00070A0B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0821C1F2A754A00070A0B /* Array.swift */; };
+		2DB0825B1F2A754A00070A0B /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0821D1F2A754A00070A0B /* DispatchQueue.swift */; };
+		2DB0825C1F2A754A00070A0B /* Enum + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0821E1F2A754A00070A0B /* Enum + Extensions.swift */; };
+		2DB0825D1F2A754A00070A0B /* NSArray+BPVExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082211F2A754A00070A0B /* NSArray+BPVExtensions.m */; };
+		2DB0825E1F2A754A00070A0B /* NSBundle+BPVExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082241F2A754A00070A0B /* NSBundle+BPVExtensions.m */; };
+		2DB0825F1F2A754A00070A0B /* NSFileManager+BPVExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082271F2A754A00070A0B /* NSFileManager+BPVExtensions.m */; };
+		2DB082601F2A754A00070A0B /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082281F2A754A00070A0B /* Optional.swift */; };
+		2DB082611F2A754A00070A0B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082291F2A754A00070A0B /* String.swift */; };
+		2DB082621F2A754A00070A0B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0822A1F2A754A00070A0B /* UIApplication.swift */; };
+		2DB082631F2A754A00070A0B /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0822B1F2A754A00070A0B /* UICollectionView.swift */; };
+		2DB082641F2A754A00070A0B /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0822C1F2A754A00070A0B /* UIImage.swift */; };
+		2DB082651F2A754A00070A0B /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0822D1F2A754A00070A0B /* UINavigationController.swift */; };
+		2DB082661F2A754A00070A0B /* UINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0822E1F2A754A00070A0B /* UINib.swift */; };
+		2DB082671F2A754A00070A0B /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0822F1F2A754A00070A0B /* UITableView.swift */; };
+		2DB082681F2A754A00070A0B /* UIViewController+AddRemoveChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082301F2A754A00070A0B /* UIViewController+AddRemoveChild.swift */; };
+		2DB082691F2A754A00070A0B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082311F2A754A00070A0B /* UIViewController.swift */; };
+		2DB0826A1F2A754A00070A0B /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082321F2A754A00070A0B /* UIWindow.swift */; };
+		2DB0826B1F2A754A00070A0B /* URRRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082331F2A754A00070A0B /* URRRequest.swift */; };
+		2DB0826C1F2A754A00070A0B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082341F2A754A00070A0B /* Functions.swift */; };
+		2DB0826D1F2A754A00070A0B /* DataConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082361F2A754A00070A0B /* DataConvertable.swift */; };
+		2DB0826E1F2A754A00070A0B /* RootViewGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082371F2A754A00070A0B /* RootViewGettable.swift */; };
+		2DB0826F1F2A754A00070A0B /* Weakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082381F2A754A00070A0B /* Weakable.swift */; };
+		2DB082701F2A754A00070A0B /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0823A1F2A754A00070A0B /* Email.swift */; };
+		2DB082711F2A754A00070A0B /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0823D1F2A754A00070A0B /* SlideInPresentationAnimator.swift */; };
+		2DB082721F2A754A00070A0B /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0823E1F2A754A00070A0B /* SlideInPresentationController.swift */; };
+		2DB082731F2A754A00070A0B /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0823F1F2A754A00070A0B /* SlideInPresentationManager.swift */; };
+		2DB082741F2A754A00070A0B /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082401F2A754A00070A0B /* SlideOutAnimationController.swift */; };
+		2DB082751F2A754A00070A0B /* BPVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082441F2A754A00070A0B /* BPVLoadingView.m */; };
+		2DB082761F2A754A00070A0B /* BPVLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB082451F2A754A00070A0B /* BPVLoadingView.xib */; };
+		2DB082771F2A754A00070A0B /* BPVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082481F2A754A00070A0B /* BPVView.m */; };
+		2DB082781F2A754A00070A0B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082491F2A754A00070A0B /* RoundedView.swift */; };
+		2DB082791F2A754A00070A0B /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0824A1F2A754A00070A0B /* RoundView.swift */; };
+		2DB0827A1F2A754A00070A0B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0824D1F2A754A00070A0B /* Context.swift */; };
+		2DB0827B1F2A754A00070A0B /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0824F1F2A754A00070A0B /* CryptoCurrency.swift */; };
+		2DB0827C1F2A754A00070A0B /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082521F2A754A00070A0B /* ConverterViewController.swift */; };
+		2DB0827D1F2A754A00070A0B /* CryptoCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082551F2A754A00070A0B /* CryptoCurrencyCell.swift */; };
+		2DB0827E1F2A754A00070A0B /* CryptoCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB082561F2A754A00070A0B /* CryptoCurrencyCell.xib */; };
+		2DB0827F1F2A754A00070A0B /* CryptoCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082571F2A754A00070A0B /* CryptoCurrenciesViewController.swift */; };
+		2DB082871F2B3DDE00070A0B /* CryptoCurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB082861F2B3DDE00070A0B /* CryptoCurrenciesView.swift */; };
+		C59D5CCB5EB332AB86016DF2 /* Pods_ConverterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A15E3566158576C15CF143 /* Pods_ConverterApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14711D63D34AA094B540B602 /* Pods-ConverterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterApp/Pods-ConverterApp.release.xcconfig"; sourceTree = "<group>"; };
 		2D3A61491F2A170300759D17 /* ConverterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A614C1F2A170300759D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D3A614E1F2A170300759D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D3A61511F2A170300759D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D3A61531F2A170300759D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3A61561F2A170300759D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3A61581F2A170300759D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB082181F2A754A00070A0B /* BPVMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPVMacro.h; sourceTree = "<group>"; };
+		2DB082191F2A754A00070A0B /* BPVMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPVMacro.m; sourceTree = "<group>"; };
+		2DB0821A1F2A754A00070A0B /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		2DB0821C1F2A754A00070A0B /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		2DB0821D1F2A754A00070A0B /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		2DB0821E1F2A754A00070A0B /* Enum + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum + Extensions.swift"; sourceTree = "<group>"; };
+		2DB082201F2A754A00070A0B /* NSArray+BPVExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BPVExtensions.h"; sourceTree = "<group>"; };
+		2DB082211F2A754A00070A0B /* NSArray+BPVExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BPVExtensions.m"; sourceTree = "<group>"; };
+		2DB082231F2A754A00070A0B /* NSBundle+BPVExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BPVExtensions.h"; sourceTree = "<group>"; };
+		2DB082241F2A754A00070A0B /* NSBundle+BPVExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BPVExtensions.m"; sourceTree = "<group>"; };
+		2DB082261F2A754A00070A0B /* NSFileManager+BPVExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+BPVExtensions.h"; sourceTree = "<group>"; };
+		2DB082271F2A754A00070A0B /* NSFileManager+BPVExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+BPVExtensions.m"; sourceTree = "<group>"; };
+		2DB082281F2A754A00070A0B /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		2DB082291F2A754A00070A0B /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2DB0822A1F2A754A00070A0B /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		2DB0822B1F2A754A00070A0B /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		2DB0822C1F2A754A00070A0B /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		2DB0822D1F2A754A00070A0B /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		2DB0822E1F2A754A00070A0B /* UINib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINib.swift; sourceTree = "<group>"; };
+		2DB0822F1F2A754A00070A0B /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		2DB082301F2A754A00070A0B /* UIViewController+AddRemoveChild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemoveChild.swift"; sourceTree = "<group>"; };
+		2DB082311F2A754A00070A0B /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		2DB082321F2A754A00070A0B /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		2DB082331F2A754A00070A0B /* URRRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URRRequest.swift; sourceTree = "<group>"; };
+		2DB082341F2A754A00070A0B /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		2DB082361F2A754A00070A0B /* DataConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConvertable.swift; sourceTree = "<group>"; };
+		2DB082371F2A754A00070A0B /* RootViewGettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewGettable.swift; sourceTree = "<group>"; };
+		2DB082381F2A754A00070A0B /* Weakable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weakable.swift; sourceTree = "<group>"; };
+		2DB0823A1F2A754A00070A0B /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		2DB0823D1F2A754A00070A0B /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		2DB0823E1F2A754A00070A0B /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
+		2DB0823F1F2A754A00070A0B /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
+		2DB082401F2A754A00070A0B /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
+		2DB082431F2A754A00070A0B /* BPVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPVLoadingView.h; sourceTree = "<group>"; };
+		2DB082441F2A754A00070A0B /* BPVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPVLoadingView.m; sourceTree = "<group>"; };
+		2DB082451F2A754A00070A0B /* BPVLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPVLoadingView.xib; sourceTree = "<group>"; };
+		2DB082471F2A754A00070A0B /* BPVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPVView.h; sourceTree = "<group>"; };
+		2DB082481F2A754A00070A0B /* BPVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPVView.m; sourceTree = "<group>"; };
+		2DB082491F2A754A00070A0B /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		2DB0824A1F2A754A00070A0B /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		2DB0824D1F2A754A00070A0B /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		2DB0824F1F2A754A00070A0B /* CryptoCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		2DB082521F2A754A00070A0B /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		2DB082551F2A754A00070A0B /* CryptoCurrencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyCell.swift; sourceTree = "<group>"; };
+		2DB082561F2A754A00070A0B /* CryptoCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoCurrencyCell.xib; sourceTree = "<group>"; };
+		2DB082571F2A754A00070A0B /* CryptoCurrenciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrenciesViewController.swift; sourceTree = "<group>"; };
+		2DB082851F2B3C0D00070A0B /* ConverterApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConverterApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		2DB082861F2B3DDE00070A0B /* CryptoCurrenciesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrenciesView.swift; sourceTree = "<group>"; };
+		C0A15E3566158576C15CF143 /* Pods_ConverterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConverterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E319128D698202BEC983AB /* Pods-ConverterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterApp/Pods-ConverterApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59D5CCB5EB332AB86016DF2 /* Pods_ConverterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +132,8 @@
 			children = (
 				2D3A614B1F2A170300759D17 /* ConverterApp */,
 				2D3A614A1F2A170300759D17 /* Products */,
+				EAEF6B9284F287EDDAF8ABAE /* Pods */,
+				C83659EF3BB6FDD7B5B26334 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +148,246 @@
 		2D3A614B1F2A170300759D17 /* ConverterApp */ = {
 			isa = PBXGroup;
 			children = (
+				2DB082151F2A754A00070A0B /* Library */,
+				2DB0824B1F2A754A00070A0B /* Sources */,
 				2D3A614C1F2A170300759D17 /* AppDelegate.swift */,
-				2D3A614E1F2A170300759D17 /* ViewController.swift */,
 				2D3A61501F2A170300759D17 /* Main.storyboard */,
 				2D3A61531F2A170300759D17 /* Assets.xcassets */,
 				2D3A61551F2A170300759D17 /* LaunchScreen.storyboard */,
+				2DB082851F2B3C0D00070A0B /* ConverterApp-Bridging-Header.h */,
 				2D3A61581F2A170300759D17 /* Info.plist */,
 			);
 			path = ConverterApp;
+			sourceTree = "<group>";
+		};
+		2DB082151F2A754A00070A0B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082161F2A754A00070A0B /* Classes */,
+				2DB0821B1F2A754A00070A0B /* Extensions */,
+				2DB082341F2A754A00070A0B /* Functions.swift */,
+				2DB082351F2A754A00070A0B /* Protocols */,
+				2DB082391F2A754A00070A0B /* Structs */,
+				2DB0823B1F2A754A00070A0B /* ViewControllers */,
+				2DB082411F2A754A00070A0B /* Views */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2DB082161F2A754A00070A0B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082171F2A754A00070A0B /* BPVMacro */,
+				2DB0821A1F2A754A00070A0B /* Lock.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2DB082171F2A754A00070A0B /* BPVMacro */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082181F2A754A00070A0B /* BPVMacro.h */,
+				2DB082191F2A754A00070A0B /* BPVMacro.m */,
+			);
+			path = BPVMacro;
+			sourceTree = "<group>";
+		};
+		2DB0821B1F2A754A00070A0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0821C1F2A754A00070A0B /* Array.swift */,
+				2DB0821D1F2A754A00070A0B /* DispatchQueue.swift */,
+				2DB0821E1F2A754A00070A0B /* Enum + Extensions.swift */,
+				2DB0821F1F2A754A00070A0B /* NSArray */,
+				2DB082221F2A754A00070A0B /* NSBundle */,
+				2DB082251F2A754A00070A0B /* NSFileManager */,
+				2DB082281F2A754A00070A0B /* Optional.swift */,
+				2DB082291F2A754A00070A0B /* String.swift */,
+				2DB0822A1F2A754A00070A0B /* UIApplication.swift */,
+				2DB0822B1F2A754A00070A0B /* UICollectionView.swift */,
+				2DB0822C1F2A754A00070A0B /* UIImage.swift */,
+				2DB0822D1F2A754A00070A0B /* UINavigationController.swift */,
+				2DB0822E1F2A754A00070A0B /* UINib.swift */,
+				2DB0822F1F2A754A00070A0B /* UITableView.swift */,
+				2DB082301F2A754A00070A0B /* UIViewController+AddRemoveChild.swift */,
+				2DB082311F2A754A00070A0B /* UIViewController.swift */,
+				2DB082321F2A754A00070A0B /* UIWindow.swift */,
+				2DB082331F2A754A00070A0B /* URRRequest.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DB0821F1F2A754A00070A0B /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082201F2A754A00070A0B /* NSArray+BPVExtensions.h */,
+				2DB082211F2A754A00070A0B /* NSArray+BPVExtensions.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		2DB082221F2A754A00070A0B /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082231F2A754A00070A0B /* NSBundle+BPVExtensions.h */,
+				2DB082241F2A754A00070A0B /* NSBundle+BPVExtensions.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		2DB082251F2A754A00070A0B /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082261F2A754A00070A0B /* NSFileManager+BPVExtensions.h */,
+				2DB082271F2A754A00070A0B /* NSFileManager+BPVExtensions.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		2DB082351F2A754A00070A0B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082361F2A754A00070A0B /* DataConvertable.swift */,
+				2DB082371F2A754A00070A0B /* RootViewGettable.swift */,
+				2DB082381F2A754A00070A0B /* Weakable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2DB082391F2A754A00070A0B /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0823A1F2A754A00070A0B /* Email.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		2DB0823B1F2A754A00070A0B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0823C1F2A754A00070A0B /* SlideInPresentationController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2DB0823C1F2A754A00070A0B /* SlideInPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0823D1F2A754A00070A0B /* SlideInPresentationAnimator.swift */,
+				2DB0823E1F2A754A00070A0B /* SlideInPresentationController.swift */,
+				2DB0823F1F2A754A00070A0B /* SlideInPresentationManager.swift */,
+				2DB082401F2A754A00070A0B /* SlideOutAnimationController.swift */,
+			);
+			path = SlideInPresentationController;
+			sourceTree = "<group>";
+		};
+		2DB082411F2A754A00070A0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082421F2A754A00070A0B /* BPVLoadingView */,
+				2DB082461F2A754A00070A0B /* BPVView */,
+				2DB082491F2A754A00070A0B /* RoundedView.swift */,
+				2DB0824A1F2A754A00070A0B /* RoundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2DB082421F2A754A00070A0B /* BPVLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082431F2A754A00070A0B /* BPVLoadingView.h */,
+				2DB082441F2A754A00070A0B /* BPVLoadingView.m */,
+				2DB082451F2A754A00070A0B /* BPVLoadingView.xib */,
+			);
+			path = BPVLoadingView;
+			sourceTree = "<group>";
+		};
+		2DB082461F2A754A00070A0B /* BPVView */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082471F2A754A00070A0B /* BPVView.h */,
+				2DB082481F2A754A00070A0B /* BPVView.m */,
+			);
+			path = BPVView;
+			sourceTree = "<group>";
+		};
+		2DB0824B1F2A754A00070A0B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0824C1F2A754A00070A0B /* Contexts */,
+				2DB0824E1F2A754A00070A0B /* Models */,
+				2DB082501F2A754A00070A0B /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2DB0824C1F2A754A00070A0B /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0824D1F2A754A00070A0B /* Context.swift */,
+			);
+			path = Contexts;
+			sourceTree = "<group>";
+		};
+		2DB0824E1F2A754A00070A0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DB0824F1F2A754A00070A0B /* CryptoCurrency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DB082501F2A754A00070A0B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082511F2A754A00070A0B /* ConverterViewController */,
+				2DB082531F2A754A00070A0B /* CryptoCurrencyViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2DB082511F2A754A00070A0B /* ConverterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082521F2A754A00070A0B /* ConverterViewController.swift */,
+			);
+			path = ConverterViewController;
+			sourceTree = "<group>";
+		};
+		2DB082531F2A754A00070A0B /* CryptoCurrencyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082541F2A754A00070A0B /* CryptoCurrencyCell */,
+				2DB082571F2A754A00070A0B /* CryptoCurrenciesViewController.swift */,
+				2DB082861F2B3DDE00070A0B /* CryptoCurrenciesView.swift */,
+			);
+			path = CryptoCurrencyViewController;
+			sourceTree = "<group>";
+		};
+		2DB082541F2A754A00070A0B /* CryptoCurrencyCell */ = {
+			isa = PBXGroup;
+			children = (
+				2DB082551F2A754A00070A0B /* CryptoCurrencyCell.swift */,
+				2DB082561F2A754A00070A0B /* CryptoCurrencyCell.xib */,
+			);
+			path = CryptoCurrencyCell;
+			sourceTree = "<group>";
+		};
+		C83659EF3BB6FDD7B5B26334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A15E3566158576C15CF143 /* Pods_ConverterApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAEF6B9284F287EDDAF8ABAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E319128D698202BEC983AB /* Pods-ConverterApp.debug.xcconfig */,
+				14711D63D34AA094B540B602 /* Pods-ConverterApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +397,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3A615B1F2A170300759D17 /* Build configuration list for PBXNativeTarget "ConverterApp" */;
 			buildPhases = (
+				C9219CBEED49DCBCDCFD3F7F /* [CP] Check Pods Manifest.lock */,
 				2D3A61451F2A170300759D17 /* Sources */,
 				2D3A61461F2A170300759D17 /* Frameworks */,
 				2D3A61471F2A170300759D17 /* Resources */,
+				BB7D31F09FE7101E4F98DA17 /* [CP] Embed Pods Frameworks */,
+				7F9699184FE2ABA8E4802B78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,21 +453,109 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB082761F2A754A00070A0B /* BPVLoadingView.xib in Resources */,
 				2D3A61571F2A170300759D17 /* LaunchScreen.storyboard in Resources */,
 				2D3A61541F2A170300759D17 /* Assets.xcassets in Resources */,
 				2D3A61521F2A170300759D17 /* Main.storyboard in Resources */,
+				2DB0827E1F2A754A00070A0B /* CryptoCurrencyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F9699184FE2ABA8E4802B78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConverterApp/Pods-ConverterApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7D31F09FE7101E4F98DA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConverterApp/Pods-ConverterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9219CBEED49DCBCDCFD3F7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D3A61451F2A170300759D17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3A614F1F2A170300759D17 /* ViewController.swift in Sources */,
+				2DB082621F2A754A00070A0B /* UIApplication.swift in Sources */,
+				2DB082731F2A754A00070A0B /* SlideInPresentationManager.swift in Sources */,
+				2DB082711F2A754A00070A0B /* SlideInPresentationAnimator.swift in Sources */,
+				2DB0827A1F2A754A00070A0B /* Context.swift in Sources */,
+				2DB082791F2A754A00070A0B /* RoundView.swift in Sources */,
+				2DB0825C1F2A754A00070A0B /* Enum + Extensions.swift in Sources */,
+				2DB082611F2A754A00070A0B /* String.swift in Sources */,
+				2DB082691F2A754A00070A0B /* UIViewController.swift in Sources */,
+				2DB082601F2A754A00070A0B /* Optional.swift in Sources */,
+				2DB082771F2A754A00070A0B /* BPVView.m in Sources */,
+				2DB0825E1F2A754A00070A0B /* NSBundle+BPVExtensions.m in Sources */,
+				2DB0825D1F2A754A00070A0B /* NSArray+BPVExtensions.m in Sources */,
+				2DB082871F2B3DDE00070A0B /* CryptoCurrenciesView.swift in Sources */,
+				2DB0826A1F2A754A00070A0B /* UIWindow.swift in Sources */,
+				2DB0826E1F2A754A00070A0B /* RootViewGettable.swift in Sources */,
+				2DB082721F2A754A00070A0B /* SlideInPresentationController.swift in Sources */,
+				2DB082651F2A754A00070A0B /* UINavigationController.swift in Sources */,
+				2DB082701F2A754A00070A0B /* Email.swift in Sources */,
+				2DB082631F2A754A00070A0B /* UICollectionView.swift in Sources */,
 				2D3A614D1F2A170300759D17 /* AppDelegate.swift in Sources */,
+				2DB0825A1F2A754A00070A0B /* Array.swift in Sources */,
+				2DB0825F1F2A754A00070A0B /* NSFileManager+BPVExtensions.m in Sources */,
+				2DB0827D1F2A754A00070A0B /* CryptoCurrencyCell.swift in Sources */,
+				2DB082671F2A754A00070A0B /* UITableView.swift in Sources */,
+				2DB082781F2A754A00070A0B /* RoundedView.swift in Sources */,
+				2DB082591F2A754A00070A0B /* Lock.swift in Sources */,
+				2DB0826F1F2A754A00070A0B /* Weakable.swift in Sources */,
+				2DB0826C1F2A754A00070A0B /* Functions.swift in Sources */,
+				2DB082751F2A754A00070A0B /* BPVLoadingView.m in Sources */,
+				2DB0825B1F2A754A00070A0B /* DispatchQueue.swift in Sources */,
+				2DB082661F2A754A00070A0B /* UINib.swift in Sources */,
+				2DB082581F2A754A00070A0B /* BPVMacro.m in Sources */,
+				2DB0827F1F2A754A00070A0B /* CryptoCurrenciesViewController.swift in Sources */,
+				2DB082641F2A754A00070A0B /* UIImage.swift in Sources */,
+				2DB0827B1F2A754A00070A0B /* CryptoCurrency.swift in Sources */,
+				2DB082681F2A754A00070A0B /* UIViewController+AddRemoveChild.swift in Sources */,
+				2DB0826B1F2A754A00070A0B /* URRRequest.swift in Sources */,
+				2DB0827C1F2A754A00070A0B /* ConverterViewController.swift in Sources */,
+				2DB0826D1F2A754A00070A0B /* DataConvertable.swift in Sources */,
+				2DB082741F2A754A00070A0B /* SlideOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +678,7 @@
 		};
 		2D3A615C1F2A170300759D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E319128D698202BEC983AB /* Pods-ConverterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66W997F46F;
@@ -268,12 +686,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pavelbondar.ConverterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ConverterApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2D3A615D1F2A170300759D17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14711D63D34AA094B540B602 /* Pods-ConverterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66W997F46F;
@@ -281,6 +701,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pavelbondar.ConverterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ConverterApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +725,7 @@
 				2D3A615D1F2A170300759D17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
