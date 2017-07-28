@@ -59,6 +59,12 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKq-Lc-LDY">
+                    <rect key="frame" x="118" y="152" width="71" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currencyLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNF-ra-Yt3">
                     <rect key="frame" x="20" y="51" width="110" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -72,11 +78,13 @@
                 <constraint firstItem="G4U-kg-8lN" firstAttribute="top" secondItem="PNF-ra-Yt3" secondAttribute="bottom" constant="10" id="5ee-Gn-fVo"/>
                 <constraint firstItem="9W9-Ez-dwI" firstAttribute="centerY" secondItem="G4U-kg-8lN" secondAttribute="centerY" id="5sB-m1-njN"/>
                 <constraint firstItem="anO-AV-XXK" firstAttribute="centerY" secondItem="fOA-I3-dg8" secondAttribute="centerY" id="8t3-Qp-s61"/>
+                <constraint firstItem="KKq-Lc-LDY" firstAttribute="centerY" secondItem="anO-AV-XXK" secondAttribute="centerY" id="CQI-Je-bhd"/>
                 <constraint firstItem="eQB-by-4c2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="J9h-he-3ws"/>
                 <constraint firstItem="zra-Ec-f2h" firstAttribute="top" secondItem="anO-AV-XXK" secondAttribute="bottom" constant="40" id="Lk1-Xa-w11"/>
                 <constraint firstItem="fOA-I3-dg8" firstAttribute="leading" secondItem="eQB-by-4c2" secondAttribute="leading" id="NIP-c6-Lej"/>
                 <constraint firstItem="fOA-I3-dg8" firstAttribute="top" secondItem="G4U-kg-8lN" secondAttribute="bottom" constant="40" id="TPs-4g-noG"/>
                 <constraint firstItem="PNF-ra-Yt3" firstAttribute="leading" secondItem="eQB-by-4c2" secondAttribute="leading" id="XcJ-wV-sc4"/>
+                <constraint firstItem="KKq-Lc-LDY" firstAttribute="leading" secondItem="anO-AV-XXK" secondAttribute="trailing" constant="10" id="Yg3-MO-ERC"/>
                 <constraint firstItem="9W9-Ez-dwI" firstAttribute="leading" secondItem="G4U-kg-8lN" secondAttribute="trailing" constant="30" id="ch6-sf-c9h"/>
                 <constraint firstItem="G4U-kg-8lN" firstAttribute="leading" secondItem="eQB-by-4c2" secondAttribute="leading" id="gCL-cK-gmz"/>
                 <constraint firstItem="anO-AV-XXK" firstAttribute="leading" secondItem="fOA-I3-dg8" secondAttribute="trailing" constant="20" id="rZl-g9-2Hq"/>
@@ -90,6 +98,7 @@
                 <outlet property="currencyLabel" destination="PNF-ra-Yt3" id="mMX-fO-sur"/>
                 <outlet property="currencySegmentedControl" destination="9W9-Ez-dwI" id="HC8-CO-kVd"/>
                 <outlet property="resultLabel" destination="anO-AV-XXK" id="7c2-Vm-Ard"/>
+                <outlet property="selectedCurrencyLabel" destination="KKq-Lc-LDY" id="5Qd-mI-MqQ"/>
             </connections>
             <point key="canvasLocation" x="101.5" y="54.5"/>
         </view>

@@ -684,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7E319128D698202BEC983AB /* Pods-ConverterApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66W997F46F;
 				INFOPLIST_FILE = ConverterApp/Info.plist;
@@ -699,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14711D63D34AA094B540B602 /* Pods-ConverterApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66W997F46F;
 				INFOPLIST_FILE = ConverterApp/Info.plist;

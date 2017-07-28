@@ -9,10 +9,6 @@
 import UIKit
 import RxSwift
 
-enum ConvertFromType {
-    case usd, btc
-}
-
 class ConverterViewController: UIViewController, RootViewGettable {
     typealias RootViewType = ConverterView
     let disposeBag = DisposeBag()
@@ -46,6 +42,7 @@ class ConverterViewController: UIViewController, RootViewGettable {
                 .observeOn(MainScheduler.instance)
                 .subscribe { [weak self] (event) in
                     self?.rootView?.resultLabel.text = "\(event.element ?? 0)"
+                    self?.rootView?.selectedCurrencyLabel.text = isUSD ? "BTC" : "USD"
                 }.addDisposableTo(self.disposeBag)
 
         }
