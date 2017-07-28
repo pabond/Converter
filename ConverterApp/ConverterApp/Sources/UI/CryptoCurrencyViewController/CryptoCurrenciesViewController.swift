@@ -64,6 +64,8 @@ extension CryptoCurrenciesViewController : UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        
+        let controller = ConverterViewController.viewController() as? ConverterViewController
+        controller?.cryptoCurrency = cryptoCurrencies?[indexPath.row]
+        controller.map { self.navigationController?.pushViewController($0, animated: true) }
     }
 }

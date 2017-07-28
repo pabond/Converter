@@ -9,9 +9,11 @@
 import UIKit
 
 class ConverterViewController: UIViewController {
+    var cryptoCurrency : CryptoCurrency?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
     }
 }
